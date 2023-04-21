@@ -1,0 +1,2 @@
+- `yarn run l1`: test L1 RPC
+- `yarn run l2`: test L2 RPC
