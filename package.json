@@ -1,12 +1,12 @@
 {
   "name": "test-rpc",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "l1": "node index.js http://127.0.0.1:8545",
-    "l2": "node index.js http://127.0.0.1:3050"
+    "l1": "node src/latest_block.js http://127.0.0.1:8545",
+    "l2": "node src/latest_block.js http://127.0.0.1:3050",
+    "block": "node src/latest_block.js"
   },
   "dependencies": {
     "ethers": "^6.3.0"
