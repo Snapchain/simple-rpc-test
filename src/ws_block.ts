@@ -18,8 +18,11 @@ wsClient.on('connect', (connection) => {
     console.log('Connection closed');
   });
 
-  connection.on('message', (message) => {
-    console.log('Received:', message.utf8Data);
+  connection.on('message', (message: pkg.Message) => {
+    console.log(
+      'Received:',
+      message.type === 'utf8' ? message.utf8Data : message.binaryData
+    );
   });
 
   const payload = JSON.stringify({
