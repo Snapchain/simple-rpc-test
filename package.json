@@ -4,11 +4,16 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "l1": "node src/latest_block.js http://127.0.0.1:8545",
-    "l2": "node src/latest_block.js http://127.0.0.1:3050",
-    "block": "node src/latest_block.js"
+    "block:http:l1": "node src/http_block.js http://127.0.0.1:8545",
+    "block:http:l2": "node src/http_block.js http://127.0.0.1:3050",
+    "block:http": "node src/http_block.js",
+    "block:ws": "node src/ws_block.js"
   },
   "dependencies": {
     "ethers": "^6.3.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.14.0",
+    "websocket": "^1.0.34"
   }
 }
