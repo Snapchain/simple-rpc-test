@@ -2,7 +2,7 @@ import { ethers } from 'ethers';
 
 async function main(rpcUrl: string) {
   // create an ethers.js provider that is connected to the local Ethereum RPC endpoint
-  const provider = new ethers.JsonRpcProvider(rpcUrl);
+  const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
 
   // get the latest block number
   const latestBlockNumber = await provider.getBlockNumber();
