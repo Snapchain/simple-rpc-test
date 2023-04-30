@@ -7,11 +7,11 @@ const config: HardhatUserConfig = {
   networks: {
     l1: {
       url: process.env.L1_RPC,
-      accounts: [process.env.OPERATOR_PRIVATE_KEY || ''],
+      accounts: [process.env.PRIVATE_KEY || ''],
     },
     l2: {
       url: process.env.L2_RPC,
-      accounts: [process.env.OPERATOR_PRIVATE_KEY || ''],
+      accounts: [process.env.PRIVATE_KEY || ''],
     },
   },
 };
