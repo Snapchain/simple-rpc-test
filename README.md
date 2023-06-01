@@ -3,6 +3,8 @@ This is to help test the RPC URLs on the rollup instance machines
 Pre-requisites:
 - run `yarn` after cloning the repo
 - run `yarn run build` to compile the contracts 
+- run `cp .env.example .env`
+- modify `.env` to change the urls to use your own slug
 
 How to use it:
 
