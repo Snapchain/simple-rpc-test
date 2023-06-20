@@ -1,3 +1,5 @@
+# Snapchain RPC Test
+
 This is to help test the RPC URLs on the rollup instance machines
 
 Pre-requisites:
