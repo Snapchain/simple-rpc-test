@@ -3,10 +3,10 @@
 This is to help test the RPC URLs on the rollup instance machines
 
 Pre-requisites:
-- run `yarn` after cloning the repo
-- run `yarn run build` to compile the contracts 
-- run `cp .env.example .env`
-- modify `.env` to change the urls to use your own slug
+1. run `yarn` after cloning the repo
+2. run `cp .env.example .env`
+3. modify `.env` to change the urls to use your own slug
+4. run `yarn run build` to compile the contracts 
 
 How to use it:
 
